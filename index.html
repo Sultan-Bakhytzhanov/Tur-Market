@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<!--Required meta tags-->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tur Market</title>
+		<!--CSS-->
+		<link rel="stylesheet" href="reset.css" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<div class="header-inner">
+				<div class="header-logo-wrapper">
+					<a href="index.html">
+						<img
+							src="assets/images/header/logo3.jpg"
+							alt="Logo"
+							class="header-logo"
+						/>
+					</a>
+				</div>
+				<div class="header-top">
+					<div class="header-tel">
+						<img
+							src="assets/images/header/beeline2.jpg"
+							alt="Number"
+							class="header-tel-img"
+						/>
+						<p>+7 (705) 7579379 <a href="#"> Перезвонить мне </a></p>
+					</div>
+					<div class="header-profile">
+						<a href="#">
+							<img src="assets/images/header/profile.png" alt="Profile" />
+						</a>
+						<a href="#">
+							<img src="assets/images/header/heart.png" alt="Favourite" />
+						</a>
+						<a href="#">
+							<img src="assets/images/header/balance.png" alt="Scales" />
+						</a>
+					</div>
+				</div>
+				<div class="header-bottom">
+					<ul class="header-nav">
+						<li><a href="#">Поиск туров</a></li>
+						<li><a href="#">Горящие туры</a></li>
+						<li><a href="#">Страны</a></li>
+						<li><a href="#">Отели</a></li>
+						<li><a href="#">Премиум отдых</a></li>
+						<li><a href="#">Франчайзинг</a></li>
+						<li><a href="#">Курсы</a></li>
+						<li><a href="#">Где купить</a></li>
+						<li id="navBtn"><a href="#">Подберите мне тур</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="main-slideShow">
+				<!-- Container for the image gallery -->
+				<div class="container">
+					<!-- Full-width images with number text -->
+					<div class="mySlides">
+						<div class="numbertext">1 / 6</div>
+						<img
+							src="assets/images/main/slideShow/Dubai.jpg"
+							style="width: 100%"
+						/>
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">2 / 6</div>
+						<img
+							src="assets/images/main/slideShow/Egypt.jpg"
+							style="width: 100%"
+						/>
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">3 / 6</div>
+						<img
+							src="assets/images/main/slideShow/Maldives.jpg"
+							style="width: 100%"
+						/>
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">4 / 6</div>
+						<img
+							src="assets/images/main/slideShow/Thailand.jpg"
+							style="width: 100%"
+						/>
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">5 / 6</div>
+						<img
+							src="assets/images/main/slideShow/Turkey.jpg"
+							style="width: 100%"
+						/>
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">6 / 6</div>
+						<img
+							src="assets/images/main/slideShow/Vietnam.jpg"
+							style="width: 100%"
+						/>
+					</div>
+
+					<!-- Next and previous buttons -->
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+					<!-- Image text -->
+					<div class="caption-container">
+						<p id="caption"></p>
+					</div>
+
+					<!-- Thumbnail images -->
+					<div class="row">
+						<div class="column">
+							<img
+								class="demo cursor"
+								src="assets/images/main/slideShow/Dubai.jpg"
+								style="width: 100%"
+								onclick="currentSlide(1)"
+								alt="Дубай"
+							/>
+						</div>
+						<div class="column">
+							<img
+								class="demo cursor"
+								src="assets/images/main/slideShow/Egypt.jpg"
+								style="width: 100%"
+								onclick="currentSlide(2)"
+								alt="Египет"
+							/>
+						</div>
+						<div class="column">
+							<img
+								class="demo cursor"
+								src="assets/images/main/slideShow/Maldives.jpg"
+								style="width: 100%"
+								onclick="currentSlide(3)"
+								alt="Mальдивы"
+							/>
+						</div>
+						<div class="column">
+							<img
+								class="demo cursor"
+								src="assets/images/main/slideShow/Thailand.jpg"
+								style="width: 100%"
+								onclick="currentSlide(4)"
+								alt="Таиланд"
+							/>
+						</div>
+						<div class="column">
+							<img
+								class="demo cursor"
+								src="assets/images/main/slideShow/Turkey.jpg"
+								style="width: 100%"
+								onclick="currentSlide(5)"
+								alt="Турция"
+							/>
+						</div>
+						<div class="column">
+							<img
+								class="demo cursor"
+								src="assets/images/main/slideShow/Vietnam.jpg"
+								style="width: 100%"
+								onclick="currentSlide(6)"
+								alt="Вьетнам"
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+			<article class="main-tourSearch">
+				<ul class="main-tourList">
+					<li>
+						<img src="assets/images/main/tourSearch/globe-24.png" alt="globe" />
+						<a href="#">
+							Страна, курорт, отель:<br />
+							<span>Египет, все курорты</span>
+						</a>
+					</li>
+					<li>
+						<img
+							src="assets/images/main/tourSearch/airplane-2-24.png"
+							alt="flight"
+						/>
+						<a href="#">
+							Выезд из:<br />
+							<span>Астаны, Алматы</span>
+						</a>
+					</li>
+					<li>
+						<img
+							src="assets/images/main/tourSearch/calendar-8-24.png"
+							alt="Date"
+						/>
+						<a href="#">
+							Дата, длительность:<br />
+							<span>24.11-01.12, 6-12 ночей</span>
+						</a>
+					</li>
+					<li id="search3">
+						<img
+							src="assets/images/main/tourSearch/clipart3496330.png"
+							alt="Person"
+							width="24px"
+							height="24px"
+						/>
+						<a href="#">
+							Кто едет:<br />
+							<span>2 взрослых</span>
+						</a>
+					</li>
+					<li id="searchBtn">
+						<a href="#">
+							Искать<br />
+							<span>text</span></a
+						>
+					</li>
+				</ul>
+			</article>
+			<section class="main-name">
+				<h1>Сеть турагенств "Tur Market"</h1>
+				<div class="main-name-wrapper">
+					<div id="name-block1">
+						<img
+							src="assets/images/main/name/icons8-globe-50.png"
+							alt="earth"
+							class="name-img"
+						/>
+						<h2 class="name-h2">Наши</h2>
+						<h2 class="name-h2">филиалы:</h2>
+						<br />
+						<h3 class="name-h3">366 офисов, 101 город</h3>
+					</div>
+					<div id="name-block2">
+						<img
+							src="assets/images/main/name/free-icon-suitcase-733003.png"
+							alt="suitcase"
+							class="name-img"
+						/>
+						<h2 class="name-h2">Сегодня</h2>
+						<h2 class="name-h2">забронировали:</h2>
+						<br />
+						<h3 class="name-h3">44 туриста</h3>
+					</div>
+					<div id="name-block3">
+						<img
+							src="assets/images/main/name/airplane-ticket.png"
+							alt="earth"
+							class="name-img"
+						/>
+						<h2 class="name-h2">Сегодня</h2>
+						<h2 class="name-h2">заказали туры:</h2>
+						<br />
+						<h3 class="name-h3">на 1 225 679тг</h3>
+					</div>
+				</div>
+			</section>
+			<article class="main-visit">
+				<h2>Рекомендуем посетить</h2>
+				<div class="main-visit-wrapper">
+					<div class="block1-wrapper">
+						<div id="visit-block1">
+							<p class="visit-p">text</p>
+						</div>
+						<h3>Лучшие отели в Египте</h3>
+					</div>
+					<div class="block2-wrapper">
+						<div id="visit-block2">
+							<p class="visit-p">text</p>
+						</div>
+						<h3>Лучшие отели в Дубае</h3>
+					</div>
+					<div class="block3-wrapper">
+						<div id="visit-block3">
+							<p class="visit-p">text</p>
+						</div>
+						<h3>Лучшие отели в Таиланде</h3>
+					</div>
+				</div>
+			</article>
+			<section class="main-form">
+				<div class="main-form-wrapper">
+					<div class="main-form-inner">
+						<h2>Хотите подобрать тур быстро</h2>
+						<h2>и по самой выгодной цене?</h2>
+						<h3>Оставьте заявку и вам поможет один из наших экспертов!</h3>
+						<form>
+							<label for="name">
+								<img
+									src="assets/images/main/form/clipart3496330.png"
+									alt="name"
+								/>
+							</label>
+							<input type="text" id="name" placeholder="Ваше имя" required />
+							<label for="phone">
+								<img src="assets/images/main/form/phone-24.png" alt="phone" />
+							</label>
+							<input type="tel" id="phone" placeholder="Телефон" required />
+							<input type="submit" value="Оставить заявку" id="submitBtn" />
+						</form>
+					</div>
+					<img
+						src="assets/images/main/form/girl.png"
+						alt="formImg"
+						id="formImage"
+					/>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="footer-wrapper">
+				<div class="footer-list-block1">
+					<ul>
+						<li>Куда поехать</li>
+						<li>
+							<a href="#"> Подбор тура </a>
+						</li>
+						<li>
+							<a href="#"> Горящие туры </a>
+						</li>
+						<li>
+							<a href="#"> Отели, гостиницы </a>
+						</li>
+						<li>
+							<a href="#"> Страны, курорты </a>
+						</li>
+						<li>
+							<a href="#"> Где купить </a>
+						</li>
+						<li>
+							<a href="#"> Туроператоры </a>
+						</li>
+						<li>
+							<a href="#"> Авиабилеты </a>
+						</li>
+					</ul>
+					<br />
+					<ul>
+						<li>Виды отдыха</li>
+						<li>
+							<a href="#"> Семейный отдых </a>
+						</li>
+						<li>
+							<a href="#"> Отдых на море </a>
+						</li>
+						<li>
+							<a href="#"> Горящие туры в Египет </a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-list-block2">
+					<ul>
+						<li>Туристам</li>
+						<li>
+							<a href="#"> Правила въезда в страны </a>
+						</li>
+						<li>
+							<a href="#"> Блог </a>
+						</li>
+						<li>
+							<a href="#"> Виртуальная реальность: выбери свой тур </a>
+						</li>
+					</ul>
+					<br />
+					<ul>
+						<li>Открыть агентство</li>
+						<li>
+							<a href="#"> Франчайзинговое предложение </a>
+						</li>
+						<li>
+							<a href="#"> Купить франшизу </a>
+						</li>
+					</ul>
+					<!--
+					<ul id="payments">
+						<li>
+							Способы оплаты
+						</li>
+						<li>
+							<a href="#">
+								<img
+									src="assets/images/footer/free-icon-visa-196578.png"
+									alt="visa"
+								/>
+							</a>
+						</li>
+						<li>
+							<a href="#"
+								><img
+									src="assets/images/footer/mastercard.png"
+									alt="mastercard"
+							/></a>
+						</li>
+						<li>
+							<a href="#"
+								><img
+									src="assets/images/footer/google-pay.png"
+									alt="google pay"
+							/></a>
+						</li>
+						<li>
+							<a href="#"
+								><img
+									src="assets/images/footer/free-icon-apple-pay-825455.png"
+									alt="apple pay"
+							/></a>
+						</li>
+					</ul>-->
+				</div>
+				<div class="footer-list-block3">
+					<ul>
+						<li>О компании</li>
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Отзывы о «Поехали с нами»</a></li>
+						<li><a href="#">Наша команда</a></li>
+						<li><a href="#">Работа у нас</a></li>
+						<li><a href="#">Курсы менеджера по туризму</a></li>
+						<li><a href="#">Связаться с руководством</a></li>
+					</ul>
+					<br />
+					<h3>Получайте самые свежие горящие туры на почту</h3>
+					<br />
+					<div class="text-field">
+						<label class="text-field__label" for="email"></label>
+						<div class="text-field__group">
+							<input
+								class="text-field__input"
+								type="email"
+								id="email"
+								name="email"
+								placeholder="Введите ваш email"
+							/>
+							<button class="text-field__btn" type="button">Найти</button>
+						</div>
+					</div>
+				</div>
+				<div class="footer-list-block4">
+					<ul>
+						<li>Мы в социальных сетях</li>
+						<li>
+							<a href="#">
+								<img
+									src="assets/images/footer/facebook-icon-11-24.png"
+									alt="facebook"
+								/>
+								Facebook
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="assets/images/footer/instagram-24.png" alt="inst" />
+								Instagram
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="assets/images/footer/telegram-24.png" alt="tg" />
+								Telegram
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="assets/images/footer/youtube-24.png" alt="youtube" />
+								Youtube
+							</a>
+						</li>
+					</ul>
+					<ul>
+						<li id="notMe">Сеть туристических агентств «Поехали с нами»</li>
+						<li><a href="#">Политика конфиденциальности</a></li>
+						<li><a href="#">Пользовательское соглашение</a></li>
+						<li><a href="#">Мобильная версия</a></li>
+						<li>© 2022</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+		<script src="script.js"></script>
+	</body>
+</html>

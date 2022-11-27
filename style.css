@@ -1,0 +1,512 @@
+body,
+html {
+	width: 1366px;
+	height: 768px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: auto;
+}
+
+/*Header*/
+
+header {
+	width: 100%;
+	height: 10vh;
+	display: inline-block;
+}
+.header-inner {
+	width: 90%;
+	height: 100%;
+	margin-left: 5%;
+}
+.header-logo-wrapper {
+	width: 15%;
+	height: 100%;
+	float: left;
+}
+.header-logo {
+	width: 4vw;
+	height: 6vh;
+	margin: 1em 3em;
+}
+.header-top {
+	width: 85%;
+	height: 50%;
+	margin-left: 15%;
+	margin-bottom: 1vh;
+	border-bottom: 1px solid gray;
+}
+.header-tel {
+	width: 40%;
+	height: 100%;
+	float: left;
+	padding-left: 1.5em;
+	margin-top: 0.5em;
+}
+.header-tel-img {
+	width: 1vw;
+	height: 2vh;
+	margin: 5% 0 10px 10px;
+	float: left;
+}
+.header-tel p {
+	float: left;
+	margin: 7% 0 0 1em;
+	font-weight: 500;
+}
+.header-tel a {
+	text-decoration: none;
+	color: #f26326;
+}
+.header-tel a:hover {
+	text-decoration: underline;
+}
+.header-profile {
+	width: 20%;
+	height: 50%;
+	float: right;
+	margin-top: 0.5em;
+}
+.header-profile img {
+	margin: 0.7em 0.4em 0em;
+	float: right;
+}
+.header-bottom {
+	width: 85%;
+	height: 50%;
+	margin-left: 15%;
+}
+.header-nav {
+	list-style-type: none;
+	background-color: #fff;
+	margin: 0;
+	padding: 0;
+}
+.header-nav li {
+	display: inline-block;
+}
+.header-nav li a:hover {
+	color: #f26326;
+}
+#navBtn {
+	background-color: #f26326;
+	margin-left: 6%;
+}
+#navBtn a {
+	color: #fff;
+	margin: 0.2em;
+	font-weight: 700;
+	font-size: 18px;
+}
+.header-nav a {
+	display: inline-block;
+	color: #000;
+	padding: 5px 10px;
+	text-decoration: none;
+}
+
+/*Main*/
+main {
+	margin-top: 1%;
+	width: 100%;
+}
+/*Slide Show*/
+* {
+	box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+	position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+	display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+	cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 40%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+	text-align: center;
+	background-color: #222;
+	padding: 2px 16px;
+	color: white;
+}
+
+.row:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+/* Six columns side by side */
+.column {
+	float: left;
+	width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+	opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+	opacity: 1;
+}
+
+/*Tour Search*/
+.main-tourSearch {
+	width: 100%;
+	height: 10vh;
+	background-color: #f4f4f5;
+	padding-top: 2.5em;
+}
+.main-tourList {
+	position: flex;
+	background-color: #fff;
+	border-radius: 5%;
+	border: 1px solid gray;
+	list-style-type: none;
+	width: 90%;
+	margin-left: 5%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+.main-tourList li {
+	display: inline-block;
+}
+.main-tourList li:not(#search3) {
+	border-right: 1px solid black;
+}
+.main-tourList a {
+	display: inline-block;
+	color: #000;
+	padding: 10px 15px;
+	text-decoration: none;
+}
+.main-tourList li:not(#searchbtn) {
+	width: 19%;
+}
+.main-tourList #searchBtn {
+	width: 14%;
+	float: right;
+	border-radius: 5%;
+	border: 1px solid black;
+	background-color: #f26326;
+	font-size: 2em;
+	text-align: center;
+}
+.main-tourList span {
+	color: #005bab;
+	font-weight: 700;
+}
+.main-tourList img {
+	margin-left: 0.5em;
+}
+#searchBtn a {
+	color: #fff;
+	font-weight: 700;
+}
+#searchBtn span {
+	display: none;
+}
+
+/*Name*/
+
+.main-name {
+	width: 100%;
+	height: 15vh;
+	background-color: #fff;
+}
+.main-name-wrapper {
+	width: 95%;
+	margin-left: 4%;
+	margin-top: 1vh;
+}
+.main-name h1 {
+	text-align: center;
+	font-size: 2rem;
+	margin-top: 1em;
+	font-family: 'Roboto', sans-serif;
+}
+
+/*nameBlocks*/
+
+#name-block1,
+#name-block2,
+#name-block3 {
+	margin: 1em;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: inline-block;
+	width: 15vw;
+	height: 8vh;
+	border-radius: 15px;
+	border: 1px solid grey;
+}
+#name-block1 {
+	background-image: url('assets/images/main/name/earth.jpg');
+}
+#name-block2 {
+	background-image: url('assets/images/main/name/fam.jpg');
+}
+#name-block3 {
+	background-image: url('assets/images/main/name/plane.jpg');
+}
+.name-img {
+	float: left;
+	margin: 10px;
+}
+.name-h2,
+.name-h3 {
+	color: #fff;
+	font-weight: 600;
+}
+.name-h2:first-of-type {
+	margin-top: 10px;
+}
+
+/*Visit*/
+
+.main-visit {
+	width: 100%;
+	height: 15vh;
+	background-color: #f4f4f5;
+}
+.main-visit h2 {
+	text-align: center;
+	font-size: 1.5rem;
+	padding-top: 0.5em;
+	font-family: 'Roboto', sans-serif;
+}
+.main-visit-wrapper {
+	width: 60%;
+	margin-left: 20%;
+	display: flex;
+}
+
+/*visitBlocks*/
+
+#visit-block1,
+#visit-block2,
+#visit-block3 {
+	width: 10vw;
+	height: 8vh;
+	margin: 1em;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 5px;
+	border-radius: 15px;
+}
+#visit-block1 {
+	background-image: url('assets/images/main/visit/egypt-hotel.jpg');
+}
+#visit-block2 {
+	background-image: url('assets/images/main/visit/dubai-hotel.jpg');
+}
+#visit-block3 {
+	background-image: url('assets/images/main/visit/thai-hotel.jpg');
+}
+.visit-p {
+	display: none;
+}
+.main-visit-wrapper h3 {
+	text-align: center;
+	font-size: 18px;
+}
+
+/*Form*/
+
+.main-form {
+	width: 100%;
+	height: 30vh;
+	background-color: #fff;
+}
+.main-form-wrapper {
+	display: flex;
+	width: 90%;
+	height: 17vh;
+	margin-left: 5%;
+	margin-top: 2%;
+	background-color: #466c99;
+	color: #fff;
+	font-weight: 500;
+	font-family: monospace;
+	border-radius: 15px;
+}
+.main-form-inner {
+	width: 50%;
+	height: 100%;
+	margin: 1em auto 0 1em;
+	padding-top: 1vh;
+}
+.main-form-inner h2 {
+	font-size: 2em;
+	margin: 0.3em;
+}
+.main-form-inner h3 {
+	font-size: 1.2em;
+	margin: 1em 0.5em;
+}
+.main-form-inner form {
+	margin-top: 3em;
+	display: flex;
+}
+.main-form-inner img {
+	width: 24px;
+	height: 24px;
+	margin: 5px;
+}
+#submitBtn {
+	background-color: #f26326;
+	color: #fff;
+	border: 0;
+	margin-left: 1em;
+	padding: 1em;
+}
+#formImage {
+	width: 300px;
+	height: 200px;
+	float: right;
+	margin: 1em;
+}
+
+/*Footer*/
+
+footer {
+	width: 100%;
+	height: 35vh;
+	background-color: #2b3641;
+	display: absolute;
+}
+.footer-wrapper {
+	width: 80%;
+	margin-left: 10%;
+	display: flex;
+	box-sizing: border-box;
+}
+.footer-list-block1,
+.footer-list-block2,
+.footer-list-block3,
+.footer-list-block4 {
+	width: 25%;
+}
+.footer-wrapper li {
+	margin: 1em;
+}
+#payments li {
+	margin: 0.2em;
+}
+.footer-wrapper li a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 1em;
+}
+.footer-wrapper li a:hover {
+	text-decoration: underline;
+}
+.footer-wrapper li:first-child:not(#notMe) {
+	font-size: 1.5em;
+	color: #fff;
+	margin: 0.5em;
+}
+#notMe {
+	color: #fff;
+	font-weight: 700;
+}
+.footer-list-block3 h3 {
+	font-size: 1em;
+	color: #fff;
+	font-weight: 700;
+}
+.footer-list-block4 img {
+	margin: 0.5em 0.5em 0 0.5em;
+}
+.footer-list-block4 li:last-child {
+	color: #fff;
+}
+
+/*footerBtn*/
+
+.text-field__group {
+	display: flex;
+}
+/* кнопка */
+.text-field__btn {
+	display: inline-block;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #212529;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	background-color: #eee;
+	border: 1px solid #f26326;
+	padding: 0.375rem 0.75rem;
+	font-size: 1rem;
+	border-radius: 0.25rem;
+	transition: background-color 0.15s ease-in-out;
+}
+.text-field__btn {
+	background-color: #f26326;
+}
+.text-field__group .text-field__input {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	position: relative;
+	z-index: 2;
+}
+.text-field__group .text-field__btn {
+	position: relative;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	border-left-width: 0;
+}
